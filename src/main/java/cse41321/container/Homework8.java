@@ -825,7 +825,7 @@ public class Homework8 {
             if (!(o instanceof HashSet))
                 return false;
 
-            HashSet<E> other = (HashSet<E>)o;
+            HashSet<E> other = (HashSet<E>) o;
 
             // If sets equal size and one is subset of other, then they're equal
             return getSize() == other.getSize()
@@ -835,6 +835,10 @@ public class Homework8 {
         public Iterator<E> iterator() {
             return table.keys().iterator();
         }
+    }
+
+    public static boolean isExitReachable(Graph maze, char entrance, char exit) {
+        return true;
     }
 
 }
