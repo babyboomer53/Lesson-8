@@ -7,7 +7,8 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
 
 public class Homework8 {
-    public class KeyValuePair<K, V> {
+
+    public static class KeyValuePair<K, V> {
         private K key;
         private V value;
 
@@ -25,7 +26,7 @@ public class Homework8 {
         }
     }
 
-    public class SinglyLinkedList<E> {
+    public static class SinglyLinkedList<E> {
         // An element in a linked list
         public class Element {
             private E data;
@@ -216,7 +217,7 @@ public class Homework8 {
         }
     }
 
-    public class ChainedHashTable<K, V> {
+    public static class ChainedHashTable<K, V> {
         // Table of buckets
         private SinglyLinkedList<KeyValuePair<K, V>>[] table;
 
@@ -384,7 +385,7 @@ public class Homework8 {
      * @param <V> Data type stored in each vertex.
      * @param <E> Data type stored in each edge.
      */
-    public class Graph<V, E> {
+    public static class Graph<V, E> {
 
         public class Vertex {
             private V data;
@@ -624,7 +625,7 @@ public class Homework8 {
 
     // Extends RuntimeException instead of Exception since that's the
     // convention set by NoSuchElementException.
-    public class DuplicateElementException extends RuntimeException {
+    public static class DuplicateElementException extends RuntimeException {
         public DuplicateElementException() {
         }
 
@@ -643,7 +644,7 @@ public class Homework8 {
 
     // Extends RuntimeException instead of Exception since that's the
     // convention set by NoSuchElementException.
-    public class DuplicateKeyException extends RuntimeException {
+    public static class DuplicateKeyException extends RuntimeException {
         public DuplicateKeyException() {
         }
 
@@ -660,7 +661,7 @@ public class Homework8 {
         }
     }
 
-    public class HashSet<E> implements Iterable<E> {
+    public static class HashSet<E> implements Iterable<E> {
         private ChainedHashTable<E, E> table;
 
         public HashSet() {
