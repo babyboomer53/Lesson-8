@@ -8,6 +8,12 @@ import static com.google.common.base.Preconditions.checkState;
 
 public class Homework8 {
 
+    public enum VertexColor {
+        WHITE,
+        GRAY,
+        BLACK
+    }
+
     public static class KeyValuePair<K, V> {
         private K key;
         private V value;
@@ -839,6 +845,7 @@ public class Homework8 {
     }
 
     public static boolean isExitReachable(Graph maze, char entrance, char exit) {
+        Graph.Vertex currentVertex = maze.getVertex(entrance);
         return true;
     }
 
