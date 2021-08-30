@@ -94,6 +94,15 @@ public class Homework8Test {
     }
 
     @Test
+    public void setVertexColor() {
+        Homework8.Graph.Vertex vertex;
+        vertex = maze1.getVertex('A');
+        vertex.setColor(Homework8.VertexColor.GRAY);
+        assertEquals(Homework8.VertexColor.GRAY, maze1.getVertex('A').getColor());
+        assertEquals(Homework8.VertexColor.WHITE, maze1.getVertex('G').getColor());
+    }
+
+    @Test
     public void testIsExitReachable() {
     }
 }

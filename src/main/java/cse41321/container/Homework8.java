@@ -397,6 +397,16 @@ public class Homework8 {
             private V data;
             private HashSet<Edge> edgesIncidentFrom = new HashSet<Edge>();
             private HashSet<Edge> edgesIncidentTo = new HashSet<Edge>();
+            private VertexColor color = VertexColor.WHITE;
+
+            public VertexColor getColor() {
+                return color;
+            }
+
+            public void setColor(VertexColor color) {
+                this.color = color;
+            }
+
 
             private Vertex(V data) {
                 this.data = data;
