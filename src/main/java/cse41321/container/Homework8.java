@@ -856,6 +856,11 @@ public class Homework8 {
 
     public static boolean isExitReachable(Graph maze, char entrance, char exit) {
         Graph.Vertex currentVertex = maze.getVertex(entrance);
+        for (Object object : maze.getVertices()) {
+            Graph.Vertex vertex = (Graph.Vertex) object;
+            System.out.println(vertex.getData());
+        }
+        System.out.println(maze.vertices.getSize());
         return true;
     }
 
