@@ -2,6 +2,7 @@ package cse41321.container;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+import java.util.Stack;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.google.common.base.Preconditions.checkState;
@@ -852,16 +853,25 @@ public class Homework8 {
         public Iterator<E> iterator() {
             return table.keys().iterator();
         }
+
     }
 
     public static boolean isExitReachable(Graph maze, char entrance, char exit) {
-        Graph.Vertex currentVertex = maze.getVertex(entrance);
-        for (Object object : maze.getVertices()) {
-            Graph.Vertex vertex = (Graph.Vertex) object;
-            System.out.println(vertex.getData());
+        Stack<Graph.Vertex> stack = new Stack<Graph.Vertex>();
+        Graph.Vertex start = maze.getVertex(entrance);
+        stack.push(start);
+        while (!stack.isEmpty()) {
+            Graph.Vertex current = stack.pop();
+            current.setColor(VertexColor.GRAY);
+            if (Character.compare((char) current.getData(), exit) == 0) return true;
+            for (Iterator it = current.edgesIncidentFrom.iterator(); it.hasNext(); ) {
+                Graph.Edge next = (Graph.Edge) it.next();
+                Graph.Vertex destination = next.getTo();
+                if (destination.getColor().compareTo(VertexColor.GRAY) != 0) {
+                    stack.push(destination);
+                }
+            }
         }
-        System.out.println(maze.vertices.getSize());
-        return true;
+        return false;
     }
-
 }
