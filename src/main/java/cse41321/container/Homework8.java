@@ -874,4 +874,66 @@ public class Homework8 {
         }
         return false;
     }
+
+    public static class Driver {
+
+        public static void main(String[] arguments) {
+            Homework8.Graph<Character, Integer> maze1;
+            Homework8.Graph<Character, Integer> maze2;
+            // Maze #1
+            maze1 = new Homework8.Graph<Character, Integer>();
+            maze1.insertVertex('A');
+            maze1.insertVertex('B');
+            maze1.insertVertex('C');
+            maze1.insertVertex('D');
+            maze1.insertVertex('E');
+            maze1.insertVertex('F');
+            maze1.insertVertex('G');
+            maze1.insertEdge('A', 'C', 0);
+            maze1.insertEdge('C', 'A', 0);
+            maze1.insertEdge('A', 'D', 0);
+            maze1.insertEdge('D', 'A', 0);
+            maze1.insertEdge('B', 'D', 0);
+            maze1.insertEdge('D', 'B', 0);
+            maze1.insertEdge('C', 'F', 0);
+            maze1.insertEdge('F', 'C', 0);
+            maze1.insertEdge('D', 'E', 0);
+            maze1.insertEdge('D', 'G', 0);
+            maze1.insertEdge('E', 'D', 0);
+            maze1.insertEdge('G', 'D', 0);
+            maze1.insertEdge('E', 'G', 0);
+            maze1.insertEdge('G', 'E', 0);
+            maze1.insertEdge('F', 'G', 0);
+            maze1.insertEdge('G', 'F', 0);
+            // Maze #2
+            maze2 = new Homework8.Graph<Character, Integer>();
+            maze2.insertVertex('A');
+            maze2.insertVertex('B');
+            maze2.insertVertex('C');
+            maze2.insertVertex('D');
+            maze2.insertVertex('E');
+            maze2.insertVertex('F');
+            maze2.insertVertex('G');
+            maze2.insertEdge('A', 'C', 0);
+            maze2.insertEdge('C', 'A', 0);
+            maze2.insertEdge('A', 'D', 0);
+            maze2.insertEdge('D', 'A', 0);
+            maze2.insertEdge('B', 'D', 0);
+            maze2.insertEdge('D', 'B', 0);
+            maze2.insertEdge('C', 'F', 0);
+            maze2.insertEdge('F', 'C', 0);
+            maze2.insertEdge('E', 'G', 0);
+            maze2.insertEdge('G', 'E', 0);
+            if (isExitReachable(maze1, 'A', 'G')) {
+                System.out.println("The exit in maze #1 is reachable!");
+            } else {
+                System.out.println("The exit in maze #1 is unreachable!");
+            }
+            if (isExitReachable(maze2, 'A', 'G')) {
+                System.out.println("The exit in maze #2 is reachable!");
+            } else {
+                System.out.println("The exit in maze #2 is unreachable!");
+            }
+        }
+    }
 }
