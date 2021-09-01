@@ -31,7 +31,7 @@ The maze in this exercise is modeled as a graph using adjacency-list representat
 were provided courtesy of the instructor (Raymond Mitchell III) and are being reused with his permission. I was hoping
 to avoid making any changes to the existing code, but I did add a **VertexColor** field to the **Vertex** class.
 
-For this exercise I chose to implement an iterative (as opposed to recursive) version of a depth-first-search
+For this exercise I chose to implement an iterative (non-recursive) version of a depth-first-search
 algorithm. The Java source for that implementation is as follows:
 ```java
     public static boolean isExitReachable(Graph maze, char entrance, char exit) {
