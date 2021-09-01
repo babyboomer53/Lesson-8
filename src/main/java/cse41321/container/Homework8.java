@@ -864,8 +864,8 @@ public class Homework8 {
             Graph.Vertex current = stack.pop();
             current.setColor(VertexColor.GRAY);
             if (Character.compare((char) current.getData(), exit) == 0) return true;
-            for (Iterator it = current.edgesIncidentFrom.iterator(); it.hasNext(); ) {
-                Graph.Edge next = (Graph.Edge) it.next();
+            for (Object object : current.edgesIncidentFrom) {
+                Graph.Edge next = (Graph.Edge) object;
                 Graph.Vertex destination = next.getTo();
                 if (destination.getColor().compareTo(VertexColor.GRAY) != 0) {
                     stack.push(destination);

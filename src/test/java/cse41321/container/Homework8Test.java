@@ -109,4 +109,12 @@ public class Homework8Test {
         assertTrue(Homework8.isExitReachable(maze1, 'A', 'G'));
         assertFalse(Homework8.isExitReachable(maze2, 'A', 'G'));
     }
+
+    @Test
+    public void somethingStrangeGoingOn() {
+        // I'm not sure what's going on, but when I add the following statements
+        // to the testIsExitReachable method above, that test fails.
+        assertTrue(Homework8.isExitReachable(maze1, 'C', 'G'));
+        assertTrue(Homework8.isExitReachable(maze2, 'E', 'G'));
+    }
 }
