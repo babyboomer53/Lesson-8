@@ -857,7 +857,7 @@ public class Homework8 {
     }
 
     public static boolean isExitReachable(Graph maze, char entrance, char exit) {
-        Stack<Graph.Vertex> stack = new Stack<Graph.Vertex>();
+        Stack<Graph.Vertex> stack = new Stack<>();
         Graph.Vertex start = maze.getVertex(entrance);
         stack.push(start);
         while (!stack.isEmpty()) {
@@ -881,7 +881,7 @@ public class Homework8 {
             Homework8.Graph<Character, Integer> maze1;
             Homework8.Graph<Character, Integer> maze2;
             // Maze #1
-            maze1 = new Homework8.Graph<Character, Integer>();
+            maze1 = new Homework8.Graph<>();
             maze1.insertVertex('A');
             maze1.insertVertex('B');
             maze1.insertVertex('C');
@@ -906,7 +906,7 @@ public class Homework8 {
             maze1.insertEdge('F', 'G', 0);
             maze1.insertEdge('G', 'F', 0);
             // Maze #2
-            maze2 = new Homework8.Graph<Character, Integer>();
+            maze2 = new Homework8.Graph<>();
             maze2.insertVertex('A');
             maze2.insertVertex('B');
             maze2.insertVertex('C');

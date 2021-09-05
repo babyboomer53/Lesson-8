@@ -1,12 +1,10 @@
 
 D
 java:S37408"/Provide the parametrized type for this generic.(ó®Ù
+M
+java:S3740Û"/Provide the parametrized type for this generic.(ÜÑšµ8ÜÎ‰Íº/
 F
-java:S3740Û"/Provide the parametrized type for this generic.(ÜÑšµ
-F
-java:S3740Ü"/Provide the parametrized type for this generic.(öæèí
-F
-java:S3740Ü"/Provide the parametrized type for this generic.(öæèí
+java:S3740Ü"/Provide the parametrized type for this generic.(ÓÂÿÜ
 F
 java:S3740İ"/Provide the parametrized type for this generic.(çÌ‡‘
 K
@@ -16,7 +14,7 @@ java:S3740ä"/Provide the parametrized type for this generic.(ø£äşÿÿÿÿÿ
 K
 java:S3740å"/Provide the parametrized type for this generic.(ó ’‰øÿÿÿÿ
 g
-java:S1149Ü"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(öæèí
+java:S1149Ü"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÓÂÿÜ
 l
 java:S1206Ì"PThis class overrides "equals()" and should therefore also override "hashCode()".(İ¢êÍıÿÿÿÿ
 u
@@ -45,12 +43,6 @@ p
 java:S2293‹"YReplace the type specification in this constructor call with the diamond operator ("<>").(´ÿéæ
 p
 java:S2293¡"YReplace the type specification in this constructor call with the diamond operator ("<>").(´ÿéæ
-p
-java:S2293Ü"YReplace the type specification in this constructor call with the diamond operator ("<>").(öæèí
-u
-java:S2293ô"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ü«íõùÿÿÿÿ
-p
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(½«İÉ
 m
 java:S1192­"VDefine a constant instead of duplicating this literal "data must not be null" 5 times.(ˆ›ßÉ
 m
